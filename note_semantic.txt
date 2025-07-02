@@ -1,0 +1,61 @@
+#Name: Tawonga Taibu
+#Task Number: 12
+#Task Name: NLP Semantic Similarity
+
+Semantic Similarity Analysis
+Similarities Between "cat," "monkey," and "banana"
+Using en_core_web_md:
+
+Cat and Monkey:
+
+Similarity: High
+Reason: Both are animals and share common traits related to living creatures. Their high similarity rating reflects their biological connection.
+Cat and Banana:
+
+Similarity: Low
+Reason: A banana is a fruit and does not share any common characteristics with a cat. This results in a substantially lower similarity score.
+Monkey and Banana:
+
+Similarity: Moderate
+Reason: Although a monkey is an animal and a banana is a fruit, monkeys interact with their environment, including fruits. This interaction may lead to 
+a somewhat higher similarity score compared to "cat" and "banana."
+Example Analysis:
+
+Apple, Wolf, and Dog:
+Dog and Wolf: High similarity
+Reason: Both are closely related animals (canids), so their similarity rating is expected to be high.
+Dog and Apple: Low similarity
+Reason: "Dog" (animal) and "apple" (fruit) belong to completely different categories.
+Apple and Wolf: Low similarity
+Reason: Similar to "dog" and "apple," the similarity score between "apple" and "wolf" should be minimal due to their unrelated categories.
+Analysis with en_core_web_sm
+Example Analysis:
+
+Monkey and Cat:
+
+Similarity: May show high similarity
+Reason: en_core_web_sm may not capture complex relationships as accurately as en_core_web_md, potentially leading to a higher similarity score than is warranted.
+Cat and Banana:
+
+Similarity: Likely lower than with en_core_web_md
+Reason: en_core_web_sm might assign even lower similarity scores for "cat" and "banana" due to its simpler model.
+Monkey and Banana:
+
+Similarity: Similar to en_core_web_md, but with potentially less accurate scores
+Reason: en_core_web_sm may provide less nuanced similarity ratings, potentially affecting the accuracy of this comparison.
+Model Comparison
+en_core_web_sm:
+
+Characteristics: Often assigns higher similarity scores to words with weaker relationships due to its simpler architecture.
+Example: "Dog" and "apple" might be rated as having more similarity than is reasonable.
+en_core_web_md:
+
+Characteristics: Provides more precise and nuanced similarity ratings using word vectors.
+Example: "Dog" and "apple" receive a lower similarity score, reflecting their unrelatedness more accurately.
+
+Summary:
+The en_core_web_md model generally captures semantic similarity more accurately due to its use of word vectors, 
+which allows it to understand context and subtle relationships between words. In contrast, the en_core_web_sm model, 
+being simpler, often provides less accurate similarity scores, especially for less obvious relationships. By comparing 
+the results from both models and analyzing specific examples, we can better understand these differences and choose the 
+appropriate model for our needs.
